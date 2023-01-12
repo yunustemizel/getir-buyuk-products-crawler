@@ -36,7 +36,7 @@ class GetirSpider(scrapy.Spider):
            
             for product in subCategory['products']:
                 self.products.append({
-                    "name": product["name"],
+                    "title": product["name"],
                     "price": product["price"],
                     "id":product['id'],
                     "images":product['picURLs'],
